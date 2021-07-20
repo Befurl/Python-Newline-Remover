@@ -1,0 +1,6 @@
+file = open("/home/matthew/Documents/School Subjects/English/English Language Project/Data/Data Gathering/Dictionary Checker/data.json", "rt")
+contents = file.read()
+file.close()
+dictionary = contents.replace("\n", "")
+file = open("/home/matthew/Documents/School Subjects/English/English Language Project/Data/Data Gathering/Dictionary Checker/data.json", "wt")
+file.write(dictionary)
