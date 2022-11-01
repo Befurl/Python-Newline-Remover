@@ -1,6 +1,8 @@
-file = open("/home/matthew/Documents/School Subjects/English/English Language Project/Data/Data Gathering/Dictionary Checker/data.json", "rt")
+filePath = input("Please enter the path of the file\n")
+
+file = open(filePath, "rt")
 contents = file.read()
 file.close()
 dictionary = contents.replace("\n", "")
-file = open("/home/matthew/Documents/School Subjects/English/English Language Project/Data/Data Gathering/Dictionary Checker/data.json", "wt")
+file = open(filePath, "wt")
 file.write(dictionary)
